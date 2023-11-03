@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Program Details</title>
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../../global/css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="text-info">Program Details</div>
+    <div id="contentdiv" class="test1"></div>
+    <div class="modal" id="modalProgram">
+      <div class="modal-content">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="modal__header--content">Program details</div>
+              <div>
+                <button class="btn btn-danger" data-bs-dimisss="modal">
+                  X
+                </button>
+              </div>
+            </div>
+            <div class="modal-body">
+              <div class="inputElement">
+                <div class="label"><label>CODE</label></div>
+                <div class="input"><input id="code" type="text"></div>
+              </div>
+              <div class="inputElement">
+                <div class="label"><label>TITLE</label></div>
+                <div class="input" ><input id="title" type="text"></div>
+              </div>
+              <div class="inputElement">
+                <div class="label"><label>NUMBER OF SEMESTER</label></div>
+                <div class="input"><input id="nos" type="text"></div>
+              </div>
+              <div class="inputElement">
+                <div class="label"><label>DEPARTMENT</label></div>
+                <div class="input" >
+                  <select id="department">
+                    
+                  </select>
+                </div>
+              </div>
+              <div class="inputElement">
+                <div class="label"><label>TECHNICAL LEVEL</label></div>
+                <div class="input">
+                  <select id="techLevel">
+                    <option value="-1">None</option>
+                    <option value="0">BTECH</option>
+                    <option value="1">MTECH</option>
+                  </select>
+              </div>
+              <div class="inputElement">
+                <div class="label"><label>GRADUATIONAL LEVEL</label></div>
+                <div class="input">
+                  <select id="gradLevel">
+                    <option value="-1">None</option>
+                    <option value="0">UG</option>
+                    <option value="1">PG</option>
+                    <option value="2">PHD</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-success" id="save">Save</button>
+              <button class="btn btn-danger" data-bs-dismiss>Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../../global/jquery.js"></script>
+    <script src="../../js/getProgramDetails.js"></script>
+    <script src="../../global/js/bootstrap.min.js"></script>
+    <script src="../../global/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
